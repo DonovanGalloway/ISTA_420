@@ -1,0 +1,11 @@
+-- .echo on
+-- header on
+
+-- name: chapter3Labs
+-- Author: Donovan Galloway
+-- Date: 7 March 2018
+
+-- 1 
+select e.lastname, e.firstname, e.employeeid, o.employeeid, o.orderdate, o.orderid
+from orders o join employees e on e.employeeid = o.employeeid;
+orderby e.lastname, e.firstname, o.orderdate, o.orderid;

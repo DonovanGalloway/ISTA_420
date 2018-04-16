@@ -1,0 +1,36 @@
+.echo on
+.header on
+
+--name: myfamily.sql
+--author: Donovan Galloway
+--date: 21 February 2018
+
+
+drop table if exist MyFamily;
+
+create table MyFamily (
+id integer,
+name text,
+sex integer,
+role text,
+age integer
+);
+
+insert into MyFamily values (1,'Donovan',1,'Parent',31);
+insert into MyFamily values (2,'Jessica',0,'Parent',31);
+insert into MyFamily values (3,'Corey',1,'Child',8);
+insert into MyFamily values (4,'Khloe',0,'Child',7);
+insert into MyFamily values (5,'Henry',1,'Child',6);
+insert into MyFamily values (6,'Kevion',1,'Child',5);
+insert into MyFamily values (7,'Aaron',1,'Pet',1);
+insert into MyFamily values (8,'Jackson',1,'Pet',1);
+
+.schema family
+
+select * from MyFamily;
+select * from MyFamily where sex =1;
+select * from MyFamily where role ='Parent';
+select * from MyFamily where role ='Pet';
+select name from MyFamily;
+select avg(age) from MyFamily;
+select sum(age) from MyFamily;

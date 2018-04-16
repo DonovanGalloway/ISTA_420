@@ -1,0 +1,202 @@
+sqlite> select * from region;
+|code|region|
+|---|---|
+1|Eastern
+2|Western
+3|Northern
+4|Southern
+sqlite> select TerritoryDescription from territories;
+TerritoryDescription
+Westboro
+Bedford
+Georgetow
+Boston
+Cambridge
+Braintree
+Providence
+Hollis
+Portsmouth
+Wilton
+Morristown
+Edison
+NewYork
+NewYork
+Mellvile
+Fairport
+Philadelphia
+Neward
+Rockville
+Greensboro
+Cary
+Columbia
+Atlanta
+Savannah
+Orlando
+Tampa
+Louisville
+Beachwood
+Findlay
+Southfield
+Troy
+BloomfieldHills
+Racine
+Roseville
+Minneapolis
+HoffmanEstates
+Chicago
+Bentonville
+Dallas
+Austin
+Denver
+ColoradoSprings
+Phoenix
+Scottsdale
+SantaMonica
+MenloPark
+SanFrancisco
+Campbell
+SantaClara
+SantaCruz
+Bellevue
+Redmond
+Seattle
+sqlite> select territorydescription from territories where RegionID = 4;
+Columbia
+Atlanta
+Savannah
+Orlando
+Tampa
+Bentonville
+Dallas
+Austin
+sqlite> select territories . territorydescription from territories where RegionID = 4;
+Columbia
+Atlanta
+Savannah
+Orlando
+Tampa
+Bentonville
+Dallas
+Austin
+sqlite> select ContactName , CompanyName, Phone , City from customers ;
+ContactName|CompanyName|Phone|City
+Maria Anders|Alfreds Futterkiste|030-0074321|Berlin
+Ana Trujillo|Ana Trujillo Emparedados y helados|(5) 555-4729|México D.F.
+Antonio Moreno|Antonio Moreno Taquería|(5) 555-3932|México D.F.
+Thomas Hardy|Around the Horn|(171) 555-7788|London
+Christina Berglund|Berglunds snabbköp|0921-12 34 65|Luleå
+Hanna Moos|Blauer See Delikatessen|0621-08460|Mannheim
+Frédérique Citeaux|Blondesddsl père et fils|88.60.15.31|Strasbourg
+Martín Sommer|Bólido Comidas preparadas|(91) 555 22 82|Madrid
+Laurence Lebihan|Bon app''|91.24.45.40|Marseille
+Elizabeth Lincoln|Bottom-Dollar Markets|(604) 555-4729|Tsawassen
+Victoria Ashworth|B''s Beverages|(171) 555-1212|London
+Patricio Simpson|Cactus Comidas para llevar|(1) 135-5555|Buenos Aires
+Francisco Chang|Centro comercial Moctezuma|(5) 555-3392|México D.F.
+Yang Wang|Chop-suey Chinese|0452-076545|Bern
+Pedro Afonso|Comércio Mineiro|(11) 555-7647|Sao Paulo
+Elizabeth Brown|Consolidated Holdings|(171) 555-2282|London
+Sven Ottlieb|Drachenblut Delikatessen|0241-039123|Aachen
+Janine Labrune|Du monde entier|40.67.88.88|Nantes
+Ann Devon|Eastern Connection|(171) 555-0297|London
+Roland Mendel|Ernst Handel|7675-3425|Graz
+Aria Cruz|Familia Arquibaldo|(11) 555-9857|Sao Paulo
+Diego Roel|FISSA Fabrica Inter. Salchichas S.A.|(91) 555 94 44|Madrid
+Martine Rancé|Folies gourmandes|20.16.10.16|Lille
+Maria Larsson|Folk och fä HB|0695-34 67 21|Bräcke
+Peter Franken|Frankenversand|089-0877310|München
+Carine Schmitt|France restauration|40.32.21.21|Nantes
+Paolo Accorti|Franchi S.p.A.|011-4988260|Torino
+Lino Rodriguez|Furia Bacalhau e Frutos do Mar|(1) 354-2534|Lisboa
+Eduardo Saavedra|Galería del gastrónomo|(93) 203 4560|Barcelona
+José Pedro Freyre|Godos Cocina Típica|(95) 555 82 82|Sevilla
+André Fonseca|Gourmet Lanchonetes|(11) 555-9482|Campinas
+Howard Snyder|Great Lakes Food Market|(503) 555-7555|Eugene
+Manuel Pereira|GROSELLA-Restaurante|(2) 283-2951|Caracas
+Mario Pontes|Hanari Carnes|(21) 555-0091|Rio de Janeiro
+Carlos Hernández|HILARION-Abastos|(5) 555-1340|San Cristóbal
+Yoshi Latimer|Hungry Coyote Import Store|(503) 555-6874|Elgin
+Patricia McKenna|Hungry Owl All-Night Grocers|2967 542|Cork
+Helen Bennett|Island Trading|(198) 555-8888|Cowes
+Philip Cramer|Königlich Essen|0555-09876|Brandenburg
+Daniel Tonini|La corne d''abondance|30.59.84.10|Versailles
+Annette Roulet|La maison d''Asie|61.77.61.10|Toulouse
+Yoshi Tannamuri|Laughing Bacchus Wine Cellars|(604) 555-3392|Vancouver
+John Steel|Lazy K Kountry Store|(509) 555-7969|Walla Walla
+Renate Messner|Lehmanns Marktstand|069-0245984|Frankfurt a.M.
+Jaime Yorres|Let''s Stop N Shop|(415) 555-5938|San Francisco
+Carlos González|LILA-Supermercado|(9) 331-6954|Barquisimeto
+Felipe Izquierdo|LINO-Delicateses|(8) 34-56-12|I. de Margarita
+Fran Wilson|Lonesome Pine Restaurant|(503) 555-9573|Portland
+Giovanni Rovelli|Magazzini Alimentari Riuniti|035-640230|Bergamo
+Catherine Dewey|Maison Dewey|(02) 201 24 67|Bruxelles
+Jean Fresnière|Mère Paillarde|(514) 555-8054|Montréal
+Alexander Feuer|Morgenstern Gesundkost|0342-023176|Leipzig
+Simon Crowther|North/South|(171) 555-7733|London
+Yvonne Moncada|Océano Atlántico Ltda.|(1) 135-5333|Buenos Aires
+Rene Phillips|Old World Delicatessen|(907) 555-7584|Anchorage
+Henriette Pfalzheim|Ottilies Käseladen|0221-0644327|Köln
+Marie Bertrand|Paris spécialités|(1) 42.34.22.66|Paris
+Guillermo Fernández|Pericles Comidas clásicas|(5) 552-3745|México D.F.
+Georg Pipps|Piccolo und mehr|6562-9722|Salzburg
+Isabel de Castro|Princesa Isabel Vinhos|(1) 356-5634|Lisboa
+Bernardo Batista|Que Delícia|(21) 555-4252|Rio de Janeiro
+Lúcia Carvalho|Queen Cozinha|(11) 555-1189|Sao Paulo
+Horst Kloss|QUICK-Stop|0372-035188|Cunewalde
+Sergio Gutiérrez|Rancho grande|(1) 123-5555|Buenos Aires
+Paula Wilson|Rattlesnake Canyon Grocery|(505) 555-5939|Albuquerque
+Maurizio Moroni|Reggiani Caseifici|0522-556721|Reggio Emilia
+Janete Limeira|Ricardo Adocicados|(21) 555-3412|Rio de Janeiro
+Michael Holz|Richter Supermarkt|0897-034214|Genève
+Alejandra Camino|Romero y tomillo|(91) 745 6200|Madrid
+Jonas Bergulfsen|Santé Gourmet|07-98 92 35|Stavern
+Jose Pavarotti|Save-a-lot Markets|(208) 555-8097|Boise
+Hari Kumar|Seven Seas Imports|(171) 555-1717|London
+Jytte Petersen|Simons bistro|31 12 34 56|Kobenhavn
+Dominique Perrier|Spécialités du monde|(1) 47.55.60.10|Paris
+Art Braunschweiger|Split Rail Beer & Ale|(307) 555-4680|Lander
+Pascale Cartrain|Suprêmes délices|(071) 23 67 22 20|Charleroi
+Liz Nixon|The Big Cheese|(503) 555-3612|Portland
+Liu Wong|The Cracker Box|(406) 555-5834|Butte
+Karin Josephs|Toms Spezialitäten|0251-031259|Münster
+Miguel Angel Paolino|Tortuga Restaurante|(5) 555-2933|México D.F.
+Anabela Domingues|Tradiçao Hipermercados|(11) 555-2167|Sao Paulo
+Helvetius Nagy|Trail''s Head Gourmet Provisioners|(206) 555-8257|Kirkland
+Palle Ibsen|Vaffeljernet|86 21 32 43|Århus
+Mary Saveley|Victuailles en stock|78.32.54.86|Lyon
+Paul Henriot|Vins et alcools Chevalier|26.47.15.10|Reims
+Rita Müller|Die Wandernde Kuh|0711-020361|Stuttgart
+Pirkko Koskitalo|Wartian Herkku|981-443655|Oulu
+Paula Parente|Wellington Importadora|(14) 555-8122|Resende
+Karl Jablonski|White Clover Markets|(206) 555-4112|Seattle
+Matti Karttunen|Wilman Kala|90-224 8858|Helsinki
+Zbyszek Piestrzeniewicz|Wolski  Zajazd|(26) 642-7012|Warszawa
+sqlite> select productname ,unitsinstock from products where unitsinstock = 0;
+Chef Anton's Gumbo Mix|0
+Alice Mutton|0
+Thüringer Rostbratwurst|0
+Gorgonzola Telino|0
+Perth Pasties|0
+sqlite> select productname , unitsinstock from products where unitsinstock > 0 order by unitsinstock limit 10;
+Sir Rodney's Scones|3
+Louisiana Hot Spiced Okra|4
+Longlife Tofu|4
+Rogede sild|5
+Northwoods Cranberry Sauce|6
+Scottish Longbreads|6
+Mascarpone Fabioli|9
+Nord-Ost Matjeshering|10
+Maxilaku|10
+Gravad lax|11
+sqlite> select productname , unitprice from products where unitsinstock > 0 order by unitprice desc limit 5;
+Côte de Blaye|263.5
+Mishi Kobe Niku|97.0
+Sir Rodney's Marmalade|81.0
+Carnarvon Tigers|62.5
+Raclette Courdavault|55.0
+sqlite> select count(*) from products ;
+77
+sqlite> select count(*) from customers;
+92
+sqlite> select count(*) from suppliers ;
+29
