@@ -1,0 +1,40 @@
+.echo on
+.headers on
+
+-- Name: ISTA 420 Exercise 4
+-- Author: Donovan Galloway
+-- Date: 28 March 2018
+
+create table pres (
+	firstname text,
+	middle name text,
+	lastname text,
+	born text,
+	died text, 
+	startdate text,
+	enddate text,
+	party text,
+	homestate text);
+
+.schema
+
+.mode csv pres
+.import pres.csv pres
+
+select * from pres
+
+delete from pres where firstname like firstname
+
+create table presidents(
+	id integer primary key autoincrement,
+	firstname text,
+	middlename text,
+	lastname text,
+	birthdate text,
+	deathdate text,
+	termstartdate text,
+	termenddate text,
+	party text,
+	homestate text);
+
+insert into presidents 

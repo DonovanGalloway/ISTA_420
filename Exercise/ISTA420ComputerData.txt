@@ -1,0 +1,34 @@
+.echo on
+.header on
+
+--name: computerdata.sql
+--author: Donovan Galloway
+--date: 24 February 2018
+
+
+drop table if exist ComputerData;
+
+create table ComputerData (
+id integer,
+name text,
+os text,
+osversion integer,
+username text,
+computertype text 
+);
+
+insert into ComputerData values (1,'BENNWKT36216001','Windows',7,'LTC Franz Rademacher','Desktop');
+insert into ComputerData values (2,'BENNNBT36216001','Windows',10,'CSM John Woodson','Laptop');
+insert into ComputerData values (3,'BENNNBT36216002','Windows',10,'MAJ Justin High','Laptop');
+insert into ComputerData values (4,'BENNWKT36216002','Windows',7,'1SG Jennifer Washington','Desktop');
+insert into ComputerData values (5,'BENNWKT36216003','Windows',10,'CPT Ryan Butterworth','Desktop');
+insert into ComputerData values (6,'BENNNBT36216003','Windows',10,'1SG Taylor Schmidt','Laptop');
+insert into ComputerData values (7,'BENNWKT36216004','Windows',10,'Paul Forsythe','Desktop');
+insert into ComputerData values (8,'BENNWKT36216005','Windows',7,'Bryan Jones','Desktop');
+.schema ComputerData
+
+select * from ComputerData;
+select * from ComputerData where osversion =7;
+select * from ComputerData where os ='Windows';
+select * from ComputerData where computertype ='Laptop';
+select name from ComputerData;
